@@ -13,7 +13,7 @@ chip and the output pins are then activated.
 
 WARNING: the 74hc595 cannot cope with more than about 20mA on each output pin and no more than 80mA total. Therefore
 if connecting LEDs directly to chip output pins use higher value resistors than normal. I use green LEDs with 2K to 3K resistors
-but 10 times higher than you would for the rating of different LED colours i.e. Vcc - forward voltage.
+but 10 times higher than you would for the rating of different LED colours i.e. Vcc - forward voltage, should suffice.
 
 <h3>SETUP</h3>
 
