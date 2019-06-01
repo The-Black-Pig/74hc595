@@ -15,7 +15,7 @@ WARNING: the 74hc595 cannot cope with more than about 20mA on each output pin an
 if connecting LEDs directly to chip output pins use higher value resistors than normal. I use green LEDs with 2K to 3K resistors
 but 10 times higher than you would for the rating of different LED colours i.e. Vcc - forward voltage.
 
-<b>SETUP</b>
+<h3>SETUP</h3>
 
 74hc595 pin connections
 <ul>
@@ -42,3 +42,13 @@ chain another 74hc595.
 
 As a matter of habit, I always use 10kΩ resisters on pull-up or pull-down pins, in case I want to feed a pulse to these
 pins in future projects.
+
+<h3>Code Examples</h3>
+
+The first example counts from 0 to 65536 in binary, taking 10 minutes to complete.
+
+The second example creates random on/off states on 16 channels.
+
+And third example is the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
+
+<h4>Any code improvement suggestions are very welcome!</h4>
