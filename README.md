@@ -18,23 +18,24 @@ but 10 times higher than you would for the rating of different LED colours i.e. 
 <b>SETUP</b>
 
 74hc595 pin connections
-
-Pin 1 - LED 2
-Pin 2 - LED 3
-Pin 3 - LED 4
-Pin 4 - LED 5
-Pin 5 - LED 6
-Pin 6 - LED 7
-Pin 7 - LED 8
-Pin 8 - Gnd
-Pin 9 - Pin 14 on chip 2
-Pin 10 - 10kΩ resister to Vcc rail
-Pin 11 - D12 and Pin 11 on chip 2
-Pin 12 - 10kΩ resister to Gnd rail
-Pin 13 - D8 and Pin 13 on chip 2
-Pin 14 - D11
-Pin 15 - LED 1
-Pin 16 - Vcc (3 - 6V)
+<ul>
+<li>Pin 1 - LED 2</li>
+<li>Pin 2 - LED 3</li>
+<li>Pin 3 - LED 4</li>
+<li>Pin 4 - LED 5</li>
+<li>Pin 5 - LED 6</li>
+<li>Pin 6 - LED 7</li>
+<li>Pin 7 - LED 8</li>
+<li></li>Pin 8 - Gnd
+<li></li>Pin 9 - Pin 14 on chip 2
+<li></li>Pin 10 - 10kΩ resister to Vcc rail
+<li></li>Pin 11 - D12 and Pin 11 on chip 2
+<li></li>Pin 12 - 10kΩ resister to Gnd rail
+<li></li>Pin 13 - D8 and Pin 13 on chip 2
+<li></li>Pin 14 - D11
+<li></li>Pin 15 - LED 1
+<li></li>Pin 16 - Vcc (3 - 6V)
+</ul>
 
 The wiring of the second chip is similar to the above wiring, only pin 9 is left unconnected unless you want to daisy
 chain another 74hc595.
