@@ -26,15 +26,15 @@ but 10 times higher than you would for the rating of different LED colours i.e. 
 <li>Pin 5 - LED 6</li>
 <li>Pin 6 - LED 7</li>
 <li>Pin 7 - LED 8</li>
-<li></li>Pin 8 - Gnd
-<li></li>Pin 9 - Pin 14 on chip 2
-<li></li>Pin 10 - 10kΩ resister to Vcc rail
-<li></li>Pin 11 - D12 and Pin 11 on chip 2
-<li></li>Pin 12 - 10kΩ resister to Gnd rail
-<li></li>Pin 13 - D8 and Pin 13 on chip 2
-<li></li>Pin 14 - D11
-<li></li>Pin 15 - LED 1
-<li></li>Pin 16 - Vcc (3 - 6V)
+<li>Pin 8 - Gnd</li>
+<li>Pin 9 - Pin 14 on chip 2</li>
+<li>Pin 10 - 10kΩ resister to Vcc rail</li>
+<li>Pin 11 - D12 and Pin 11 on chip 2</li>
+<li>Pin 12 - 10kΩ resister to Gnd rail</li>
+<li>Pin 13 - D8 and Pin 13 on chip 2</li>
+<li>Pin 14 - D11</li>
+<li>Pin 15 - LED 1</li>
+<li>Pin 16 - Vcc (3 - 6V)</li>
 </ul>
 
 The wiring of the second chip is similar to the above wiring, only pin 9 is left unconnected unless you want to daisy
