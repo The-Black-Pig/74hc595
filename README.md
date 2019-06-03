@@ -45,6 +45,7 @@ pins in future projects.
 
 <h3>Example Sketches</h3>
 
+<i>74hc595_binary_counter.ino</i>
 The first example counts from 0 to 65536 in binary, and takes exactly 10 minutes to complete.
 
 The second example creates random on/off states on 16 channels.
