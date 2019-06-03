@@ -1,7 +1,8 @@
-// Modified by Steve Clements 2019
+// pushData function based on code from Carlyn Maw,Tom Igoe
+// Modified for multiple 74hc595 chips by Steve Clements 2019
 
-// Uses two daisy chained 74hc595 chips to count
-// in binary from 0 to 65536 in exactly 10 minutes
+// Uses two daisy chained 74hc595s to make a 16 LED
+// random display.
 
 // WARNING: the 74hc595 cannot cope with more than 20mA on
 // each output pin and not more than 80mA total. therefore
@@ -22,25 +23,31 @@ void setup() {
   pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
+  pushData(0,0);
 }
 
 void loop() {
   //count up routine
   for (int i = 0; i < 256; i++) {
       for (int j = 0; j < 256; j++) {
-        //ground latchPin and hold low for as long as you are transmitting
-        digitalWrite(latchPin, LOW);
-        // push the firstbyte into chip 1
-        shiftOut(dataPin, clockPin, MSBFIRST, i);
-        // push the second byte into chip 1, which pushes the first byte into chip 2
-        shiftOut(dataPin, clockPin, MSBFIRST, j);
-        //return the latch pin high to signal chip that it
-        //no longer needs to listen for information
-        digitalWrite(latchPin, HIGH);
-        
-        delayMicroseconds(tDelay);
+        pushData(i, j);
       }
   }
   // wait a few of seconds to show process has completed, then repeat
   delay(5000);
+}
+
+
+void pushData(byte fstByte, byte scndByte){
+  
+  // pull latch pin low to accept data
+  digitalWrite(latchPin, LOW);
+  // push the firstbyte into chip 1
+  shiftOut(dataPin, clockPin, MSBFIRST, fstByte);
+  // push the second byte into chip 1, which pushes the first byte into chip 2
+  shiftOut(dataPin, clockPin, MSBFIRST, scndByte);
+  // pull latch pin high to stop accepting data
+  digitalWrite(latchPin, HIGH);
+  delayMicroseconds(tDelay);
+  
 }

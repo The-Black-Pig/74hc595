@@ -1,4 +1,5 @@
-// Modified by Steve Clements 2019
+// pushData function based on code from Carlyn Maw,Tom Igoe
+// Modified for multiple 74hc595 chips by Steve Clements 2019
 
 // Uses two daisy chained 74hc595 chips to produce
 // the Knight Rider effect.

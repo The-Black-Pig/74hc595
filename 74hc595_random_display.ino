@@ -1,4 +1,5 @@
-// Modified by Steve Clements 2019
+// pushData function based on code from Carlyn Maw,Tom Igoe
+// Modified for multiple 74hc595 chips by Steve Clements 2019
 
 // Uses two daisy chained 74hc595 chips to
 // make a 16 LED random display.
@@ -23,25 +24,29 @@ void setup() {
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
   // turn all leds off
-  digitalWrite(latchPin, LOW);
-  shiftOut(dataPin, clockPin, MSBFIRST, 0);
-  // push the second byte into chip 1, which pushes the first byte into chip 2
-  shiftOut(dataPin, clockPin, MSBFIRST, 0);
-  digitalWrite(latchPin, HIGH);
+  pushData(0,0);
   delay(500);
 }
 
 void loop() {
   
-        //ground latchPin and hold low for as long as you are transmitting
-        digitalWrite(latchPin, LOW);
-        int randomNumber = random(0, 255);
-        // push the firstbyte into chip 1
-        shiftOut(dataPin, clockPin, MSBFIRST, randomNumber);
-        randomNumber = random(0, 255);
-        // push the second byte into chip 1, which pushes the first byte into chip 2
-        shiftOut(dataPin, clockPin, MSBFIRST, randomNumber);
-        digitalWrite(latchPin, HIGH);
-        delay(tDelay);
-        
+        byte randomNumber1 = random(0, 255);
+        byte randomNumber2 = random(0, 255);
+        pushData(randomNumber1, randomNumber2);
+
+}
+
+
+void pushData(byte fstByte, byte scndByte){
+  
+  // pull latch pin low to accept data
+  digitalWrite(latchPin, LOW);
+  // push the firstbyte into chip 1
+  shiftOut(dataPin, clockPin, MSBFIRST, fstByte);
+  // push the second byte into chip 1, which pushes the first byte into chip 2
+  shiftOut(dataPin, clockPin, MSBFIRST, scndByte);
+  // pull latch pin high to stop accepting data
+  digitalWrite(latchPin, HIGH);
+  delay(tDelay);
+  
 }
