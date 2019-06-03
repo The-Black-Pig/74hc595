@@ -48,11 +48,15 @@ pins in future projects.
 <i>74hc595_binary_counter.ino</i><br>
 The first example counts from 0 to 65536 in binary, and takes exactly 10 minutes to complete.
 
+<i>74hc595_random_display.ino</i><br>
 The second example creates random on/off states on 16 channels.
 
+<i>74hc595_knight_rider.ino</i><br>
+<i>74hc595_knight_rider_2.ino</i><br>
 And third and fourth examples are versions of the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
 The two versions of the "Knight Rider" demo use slightly different coding techniques. The first one uses an array and the second uses bit shifting.
 
+<i>74hc595_bounce_effect.ino</i><br>
 Finally, a simple bit shift sketch where the LEDs appear to bounce in the middle.
 
 <h4>Any code improvement suggestions are very welcome!</h4>
