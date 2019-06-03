@@ -50,6 +50,6 @@ The first example counts from 0 to 65536 in binary, taking 10 minutes to complet
 The second example creates random on/off states on 16 channels.
 
 And third example is the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
-The two versions of the "Knight Rider" use slightly different coding. The first one uses an arrayand the second uses bit shifting.
+The two versions of the "Knight Rider" use slightly different coding. The first one uses an array and the second uses bit shifting.
 
 <h4>Any code improvement suggestions are very welcome!</h4>
