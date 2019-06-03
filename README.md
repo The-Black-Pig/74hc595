@@ -59,4 +59,7 @@ The two versions of the "Knight Rider" demo use slightly different coding techni
 <i>74hc595_bounce_effect.ino</i><br>
 Finally, a simple bit shift sketch where the LEDs appear to bounce in the middle.
 
+<i>74hc595_serial_input.ino</i><br>
+Input an integer between 0 and 65335 and show the binary equivalent with the LEDs.
+
 <h4>Any code improvement suggestions are very welcome!</h4>
