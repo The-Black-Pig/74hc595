@@ -1,3 +1,5 @@
+// Modified by Steve Clements 2019
+
 // Uses two daisy chained 74hc595 chips to
 // in binary to 65536 in exactly 10 minutes
 
