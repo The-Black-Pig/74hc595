@@ -17,36 +17,47 @@ int dataPin = 11;
 
 int tDelay = 20; // determines the speed of the process
 
-int binaryVals[] = {1, 2, 4, 8, 16, 32, 64, 128};
-
 void setup() {
   
   //set pins to output because they are addressed in the main loop
   pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
-  pushData(0, 0);
+  pushData(0, 0);  
   
 }
 
 void loop() {
-  
-  for (int i = 0; i < 8; i++) {
-        pushData(0, binaryVals[i]);
-  }
 
-  for (int i = 0; i < 8; i++) {
-        pushData(binaryVals[i], 0);
-  }
+  byte checkByte = 1;
+  
+  for (int i = 0; i < 8; i++){
+
+    pushData(0, checkByte);  
+    checkByte = checkByte << 1;
+    }
+    
+    checkByte = 1;
+
+  for (int i = 0; i < 8; i++){
+
+    pushData(checkByte, 0);  
+    checkByte = checkByte << 1;
+    }
+    
+    checkByte = 128;
 
   for (int i = 6; i > -1; i--) {
-        pushData(binaryVals[i], 0);
+    pushData(checkByte, 0);  
+    checkByte = checkByte >> 1;
   }
+
+    checkByte = 128;
 
   for (int i = 7; i > 0; i--) {
-        pushData(0, binaryVals[i]);
+    pushData(0, checkByte);  
+    checkByte = checkByte >> 1;
   }
-
 }
 
 
@@ -63,4 +74,3 @@ void pushData(byte fstByte, byte scndByte){
   delay(tDelay);
   
 }
-
