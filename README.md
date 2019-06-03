@@ -19,13 +19,13 @@ but 10 times higher than you would for the rating of different LED colours i.e. 
 
 74hc595 pin connections
 <ul>
-<li>Pin 1 - LED 2</li>
-<li>Pin 2 - LED 3</li>
-<li>Pin 3 - LED 4</li>
-<li>Pin 4 - LED 5</li>
-<li>Pin 5 - LED 6</li>
-<li>Pin 6 - LED 7</li>
-<li>Pin 7 - LED 8</li>
+<li>Pin 1 - 2KΩ - LED 2</li>
+<li>Pin 2 - 2KΩ - LED 3</li>
+<li>Pin 3 - 2KΩ - LED 4</li>
+<li>Pin 4 - 2KΩ - LED 5</li>
+<li>Pin 5 - 2KΩ - LED 6</li>
+<li>Pin 6 - 2KΩ - LED 7</li>
+<li>Pin 7 - 2KΩ - LED 8</li>
 <li>Pin 8 - Gnd</li>
 <li>Pin 9 - Pin 14 on chip 2</li>
 <li>Pin 10 - 10kΩ resister to Vcc rail</li>
@@ -33,7 +33,7 @@ but 10 times higher than you would for the rating of different LED colours i.e. 
 <li>Pin 12 - 10kΩ resister to Gnd rail</li>
 <li>Pin 13 - D8 and Pin 13 on chip 2</li>
 <li>Pin 14 - D11</li>
-<li>Pin 15 - LED 1</li>
+<li>Pin 15 - 2KΩ - LED 1</li>
 <li>Pin 16 - Vcc (3 - 6V)</li>
 </ul>
 
@@ -50,5 +50,6 @@ The first example counts from 0 to 65536 in binary, taking 10 minutes to complet
 The second example creates random on/off states on 16 channels.
 
 And third example is the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
+The two versions of the "Knight Rider" use slightly different coding. The first one uses an arrayand the second uses bit shifting.
 
 <h4>Any code improvement suggestions are very welcome!</h4>
