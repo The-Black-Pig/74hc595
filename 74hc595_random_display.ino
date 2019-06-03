@@ -1,7 +1,7 @@
 // Modified by Steve Clements 2019
 
 // Uses two daisy chained 74hc595 chips to
-// in binary to 65536 in exactly 10 minutes
+// make a 16 LED random display.
 
 // WARNING: the 74hc595 cannot cope with more than 20mA on
 // each output pin and not more than 80mA total. therefore
