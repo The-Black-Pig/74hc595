@@ -57,7 +57,7 @@ And third and fourth examples are versions of the obligatory "Knight Rider" demo
 The two versions of the "Knight Rider" demo use slightly different coding techniques. The first one uses an array and the second uses bit shifting.
 
 <i>74hc595_bounce_effect.ino</i><br>
-Finally, a simple bit shift sketch where the LEDs appear to bounce in the middle.
+A simple bit shift sketch where the LEDs appear to bounce in the middle.
 
 <i>74hc595_serial_input.ino</i><br>
 Input an integer between 0 and 65335 and show the binary equivalent with the LEDs.
