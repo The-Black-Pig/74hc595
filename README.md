@@ -43,7 +43,7 @@ chain another 74hc595.
 As a matter of habit, I always use 10kΩ resisters on pull-up or pull-down pins, in case I want to feed a pulse to these
 pins in future projects.
 
-<h3>Code Examples</h3>
+<h3>Example Sketches</h3>
 
 The first example counts from 0 to 65536 in binary, taking 10 minutes to complete.
 
