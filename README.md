@@ -30,8 +30,8 @@ but any resister 10 times higher than you would normally use, should provide suf
 <li>Pin 9 - Pin 14 on chip 2</li>
 <li>Pin 10 - 10kΩ resister to Vcc rail</li>
 <li>Pin 11 - D12 and Pin 11 on chip 2</li>
-<li>Pin 12 - 10kΩ resister to Gnd rail</li>
-<li>Pin 13 - D8 and Pin 13 on chip 2</li>
+<li>Pin 12 - D8 and Pin 12 on chip 2</li>
+<li>Pin 13 - 10kΩ resister to Gnd rail</li>
 <li>Pin 14 - D11</li>
 <li>Pin 15 - 2KΩ - LED 1</li>
 <li>Pin 16 - Vcc (3 - 6V)</li>
