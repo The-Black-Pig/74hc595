@@ -45,11 +45,13 @@ pins in future projects.
 
 <h3>Example Sketches</h3>
 
-The first example counts from 0 to 65536 in binary, taking 10 minutes to complete.
+The first example counts from 0 to 65536 in binary, and takes exactly 10 minutes to complete.
 
 The second example creates random on/off states on 16 channels.
 
-And third example is the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
-The two versions of the "Knight Rider" use slightly different coding. The first one uses an array and the second uses bit shifting.
+And third and fourth examples are versions of the obligatory "Knight Rider" demo. A must, if you have row of LEDS set up.
+The two versions of the "Knight Rider" demo use slightly different coding techniques. The first one uses an array and the second uses bit shifting.
+
+Finally, a simple bit shift sketch where the LEDs appear to bounce in the middle.
 
 <h4>Any code improvement suggestions are very welcome!</h4>
